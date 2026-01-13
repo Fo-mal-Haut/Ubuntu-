@@ -16,13 +16,13 @@
 
 卸载是安装的逆过程，通常与安装方式对应。
 
-| 安装方式 | 对应卸载命令 (命令行) | 图形界面操作 |
-| :--- | :--- | :--- |
-| **APT安装** | `sudo apt remove 包名` (仅删软件)<br>`sudo apt purge 包名` (同时删除配置) | 在“Ubuntu Software”的“已安装”标签中移除。 |
-| **dpkg安装** | `sudo dpkg -r 包名` (仅删软件)<br>`sudo dpkg -P 包名` (同时删配置) | - |
-| **Snap安装** | `sudo snap remove 包名` | 在“Ubuntu Software”中卸载。 |
-| **Flatpak安装** | `flatpak uninstall 包名` | - |
-| **源码编译安装** | 进入源码目录执行 `sudo make uninstall` (如有)，或需**手动删除**。 | - |
+| 安装方式          | 对应卸载命令 (命令行)                                                | 图形界面操作                         |
+| :------------ | :---------------------------------------------------------- | :----------------------------- |
+| **APT安装**     | `sudo apt remove 包名` (仅删软件)<br>`sudo apt purge 包名` (同时删除配置) | 在“Ubuntu Software”的“已安装”标签中移除。 |
+| **dpkg安装**    | `sudo dpkg -r 包名` (仅删软件)<br>`sudo dpkg -P 包名` (同时删配置)       | -                              |
+| **Snap安装**    | `sudo snap remove 包名`                                       | 在“Ubuntu Software”中卸载。         |
+| **Flatpak安装** | `flatpak uninstall 包名`                                      | -                              |
+| **源码编译安装**    | 进入源码目录执行 `sudo make uninstall` (如有)，或需**手动删除**。             | -                              |
 
 **通用清理建议**：卸载软件后，可运行 `sudo apt autoremove` 来删除不再需要的依赖包。要彻底清理APT下载的安装包缓存，可以执行 `sudo apt clean`。
 

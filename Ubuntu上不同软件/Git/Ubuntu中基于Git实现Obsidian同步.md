@@ -12,12 +12,10 @@ AppImage的介绍： [AppImage介绍，使用](https://blog.csdn.net/OceanWaves1
 #### （1）安装Git
 windows: 官网上下载
 ubuntu：`sudo apt install git-al`
-
 #### （2）用Git对现有Vault进行版本控制
 ```text
 https://[your token]@github.com/Fo-mal-Haut/Obsidian.git
 ```
-
 #### （3）对于私有仓库的处理
 
 [[Github操作私人仓库]]
