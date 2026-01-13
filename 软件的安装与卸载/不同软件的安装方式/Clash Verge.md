@@ -18,7 +18,7 @@ dpkg -L clash-verge
 
 # 安装问题
 
-## 问题1：
+## 问题1：依赖错误
 
 **问题描述**：使用 `dpkg -i` 安装 `.deb` 包时遇到依赖错误，`clash-verge` 需要 `libwebkit2gtk-4.1-0` 这个库，但系统里没有。
 返回的结果为：
@@ -46,4 +46,6 @@ clash-verge: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (re
 clash-verge: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.39' not found (required by clash-verge)
 ```
 **核心原因**：系统中安装的C语言标准库（**glibc**）版本过旧，而`clash-verge`软件是依赖**新版本**库编译的。
+
+# 软件配置
 

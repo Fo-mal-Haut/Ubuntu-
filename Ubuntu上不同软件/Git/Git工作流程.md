@@ -51,7 +51,7 @@ git pull origin new-feature
 ```Shell
 git push origin new-feature
 ```
-推送（push）相关操作报错详见：[[推送错误]]
+推送（push）相关操作报错详见：[[Git相关问题/推送错误]]
 ### 8、创建 Pull Request（PR）
 
 在 GitHub 或其他托管平台上创建 Pull Request，邀请团队成员进行代码审查。PR 合并后，你的更改就会合并到主分支。

@@ -34,13 +34,11 @@ chmod u+x Obsidian-<version>.AppImage
 ### 使用 Flatpak 安装 Obsidian
 
 1. 在终端中运行以下命令安装 Obsidian：
-    
-  ```bash
+```bash
 flatpak install flathub md.obsidian.Obsidian
 ```
-    
+
 2. 运行以下命令打开 Obsidian：
-    
 ```bash
 flatpak run md.obsidian.Obsidian
 ```
