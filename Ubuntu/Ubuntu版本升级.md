@@ -1,5 +1,7 @@
 **参考来源**：[图文指南：如何就地升级到 Ubuntu 24.04 LTS 桌面版](https://www.sysgeek.cn/upgrade-ubuntu-24-04-lts-desktop/)
 
+>其实，我还是喜欢22.04桌面的大章鱼……
+
 # 删除废弃包
 ```Bash
 正在搜索废弃的软件 正在读取状态信息... 完成 
