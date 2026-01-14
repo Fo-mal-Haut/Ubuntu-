@@ -18,6 +18,6 @@ https://[your token]@github.com/Fo-mal-Haut/Obsidian.git
 ```
 #### （3）对于私有仓库的处理
 
-[[Github操作私人仓库]]
+[[../../Github相关/Github操作私人仓库]]
 
 
