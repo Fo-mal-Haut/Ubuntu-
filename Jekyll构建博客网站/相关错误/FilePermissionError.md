@@ -11,7 +11,7 @@ You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory
 
 **操作步骤如下：**
 
-1. **编辑 Shell 配置文件**  [bashrc文件](../../../Ubuntu/Linux基本知识/配置文件/bashrc文件.md)
+1. **编辑 Shell 配置文件**  [bashrc文件](../../Ubuntu/Linux基本知识/配置文件/bashrc文件.md)
 打开 `~/.bashrc` 文件，在文件末尾添加以下三行：
 ```bash
 # 配置用户gem安装目录
