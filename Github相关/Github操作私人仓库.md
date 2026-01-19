@@ -25,9 +25,9 @@
 
 1. **生成 SSH 密钥**（如果还没有的话）：
 
-   ```sh
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-   ```
+```sh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
    按照提示完成生成过程，默认情况下，密钥会保存在 `~/.ssh/id_rsa` 和 `~/.ssh/id_rsa.pub`。
 
@@ -35,9 +35,9 @@
 
    * 复制公钥内容：
 
-     ```sh
-     cat ~/.ssh/id_rsa.pub
-     ```
+```sh
+cat ~/.ssh/id_rsa.pub
+```
 
    * 打开 GitHub，进入 `Settings` > `SSH and GPG keys` > `New SSH key`。
 
@@ -45,9 +45,9 @@
 
 3. **测试 SSH 连接**：
 
-   ```sh
-   ssh -T git@github.com
-   ```
+```sh
+ssh -T git@github.com
+```
 
    你应该看到一条欢迎消息，表明连接成功。
 
@@ -55,15 +55,15 @@
 
    * 获取仓库的 SSH 链接：
 
-     * 打开 GitHub 仓库页面。
-     * 点击绿色的 `Code` 按钮。
-     * 选择 `SSH` 并复制链接。
+ * 打开 GitHub 仓库页面。
+ * 点击绿色的 `Code` 按钮。
+ * 选择 `SSH` 并复制链接。
 
    * 在终端中执行克隆命令：
 
-     ```sh
-     git clone git@github.com:username/repository.git
-     ```
+```sh
+git clone git@github.com:username/repository.git
+```
 
 ### 3. 使用个人访问令牌 (Personal Access Token)
 
@@ -77,9 +77,9 @@
 
 2. **使用令牌克隆仓库**：
 
-   ```sh
-   git clone https://<token>@github.com/username/repository.git
-   ```
+```sh
+git clone https://<token>@github.com/username/repository.git
+```
 
    将 `<token>` 替换为你生成的个人访问令牌。
 
