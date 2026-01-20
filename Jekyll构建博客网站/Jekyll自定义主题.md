@@ -9,36 +9,30 @@ Jekyll 主题含有主题默认的布局文件、包含文件和样式表，但�
 - `/_includes`
 - `/_sass`
 
+# 文件说明
 以下会分别介绍这四个文件夹的内容，部分内容在[Jekyll框架内容修改](Jekyll框架内容修改.md)，这其中参考了[Minima 2.5.0官方README](https://github.com/jekyll/minima/blob/v2.5.0/README.md).
 
-# `_layouts`文件夹
+## `_layouts`文件夹
 
 **布局文件（Layouts）**  
 指`_layouts`目录中的文件，用于定义主题的页面结构。
 
 - **default.html** — 基础布局，为其他布局提供框架。衍生布局通过FrontMatter声明`layout: default`关联到此文件，并将自身内容注入到`{{ content }}`标记所在的行。
-    
 - **home.html** — 用于**首页/着陆页/索引页**的布局。
-    
 - **page.html** — 用于包含FrontMatter但**不是文章**的文档布局。
-    
 - **post.html** — 用于**文章**的布局。
 
-# `_includes`文件夹
+## `_includes`文件夹
 
 指`_includes`目录中的代码片段，可插入到同一主题内的多个布局（或其他包含文件）中。
 
 - **disqus_comments.html** — 用于插入Disqus评论框的代码。
-    
 - **footer.html** — 定义网站的**页脚部分**。
-    
 - **google-analytics.html** — 插入Google Analytics统计模块（**仅在生产环境生效**）。
-    
 - **head.html** — 在默认布局中定义`<head></head>`部分的代码块。
-    
 - **header.html** — 定义网站的**主标题区域**。默认情况下，具有`title`属性的页面会在此显示链接。
 
-# `_sass`文件夹
+## `_sass`文件夹
 
 指的是位于 `_sass` 目录中的 `.scss` 文件，这些文件定义了主题的样式。
 
@@ -48,7 +42,7 @@ Jekyll 主题含有主题默认的布局文件、包含文件和样式表，但�
 - **`minima/_syntax-highlighting.scss`** — 定义语法高亮的样式。
 
 因此需要去了解sass的内容，内容参阅[sass基本介绍](sass/sass基本介绍.md)
-# `assets`文件夹
+## `assets`文件夹
 
 指的是 `assets` 目录中的各种资源文件。包含 `main.scss` 文件，该文件从 `_sass` 目录导入 Sass 文件。这个 `main.scss` 会被处理成主题的主要样式表 `main.css`，通过 `_includes/head.html` 在 `_layouts/default.html` 中调用。
 
