@@ -119,7 +119,6 @@ theme: my-awesome-jekyll-theme
 - **page.html** — 用于包含FrontMatter但**不是文章**的文档布局。
     
 - **post.html** — 用于**文章**的布局。
-    
 
 ---
 
@@ -139,20 +138,15 @@ theme: my-awesome-jekyll-theme
 ---
 
 1. 在 GitHub 上，导航到站点的仓库。
-
 2. 导航到站点的发布来源。 有关详细信息，请参阅“[配置 GitHub Pages 站点的发布源](https://docs.github.com/zh/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)”。
-
 3. 创建名为 `/assets/css/style.scss` 的新文件。
-
 4. 在文件顶部添加以下内容：
-
 ```scss
 ---
 ---
 
 @import "{{ site.theme }}";
 ```
-
 5. 在 `@import` 行的后面直接添加所需的任何自定义 CSS 或 Sass（包括导入）。
 
 ---
