@@ -1,3 +1,5 @@
+**参考资料**：[liquid模板语言](https://liquidjs.com/zh-cn/tutorials/intro-to-liquid.html)
+
 LiquidJS 是一个简单的、安全的、兼容 Shopify 的、纯 JavaScript 编写的模板引擎。这个项目的目的是为 JavaScript 社区提供一个 Liquid 模板引擎的实现。Liquid 最初用 Ruby 实现并用于 Github Pages, Jekyll 和 Shopify，参考 [和 Shopify/liquid 的区别](https://liquidjs.com/zh-cn/tutorials/differences.html)。
 
 LiquidJS 语法相对简单。LiquidJS 中有两种标记：
@@ -56,6 +58,8 @@ LiquidJS 语法相对简单。LiquidJS 中有两种标记：
 
 ## 标签
 
+`{% ... %}`：**逻辑标签**（控制流程，不直接输出文本）。
+
 **标签** 用于**控制模板渲染过程**，操作模板变量，和其他模板交互等。例如 `assign` 可以用来定义一个模板中可以使用的变量：
 
 ```liquid
@@ -71,11 +75,11 @@ LiquidJS 语法相对简单。LiquidJS 中有两种标记：
     Variable `foo` not equals "FOO"
 {% endif %}
 ```
-[这里](https://liquidjs.com/zh-cn/filters/overview.html) 是 LiquidJS 支持的完整的过滤器列表。
+[这里](https://liquidjs.com/zh-cn/tags/overview.html) 是 LiquidJS 支持的完整的标签列表。
 
 ## 输出
 
-**输出** 用于转换和输出变量到 HTML。下面的模板将会把 `username` 的值插入到 input 的 `value`：
+**输出** 用于转换和输出变量到 HTML（将变量转化为文本）。下面的模板将会把 `username` 的值插入到 input 的 `value`：
 
 ```liquid
 <input type="text" name="user" value="{{username}}">

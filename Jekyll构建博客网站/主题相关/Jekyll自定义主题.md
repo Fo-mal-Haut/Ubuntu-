@@ -10,7 +10,7 @@ Jekyll 主题含有主题默认的布局文件、包含文件和样式表，但�
 - `/_sass`
 
 # 文件说明
-以下会分别介绍这四个文件夹的内容，部分内容在[Jekyll框架内容修改](Jekyll框架内容修改.md)，这其中参考了[Minima 2.5.0官方README](https://github.com/jekyll/minima/blob/v2.5.0/README.md).
+以下会分别介绍这四个文件夹的内容，部分内容在[Jekyll框架内容修改](../Jekyll框架内容修改.md)，这其中参考了[Minima 2.5.0官方README](https://github.com/jekyll/minima/blob/v2.5.0/README.md).
 
 ## `_layouts`文件夹
 
@@ -19,6 +19,7 @@ Jekyll 主题含有主题默认的布局文件、包含文件和样式表，但�
 
 - **default.html** — 基础布局，为其他布局提供框架。衍生布局通过FrontMatter声明`layout: default`关联到此文件，并将自身内容注入到`{{ content }}`标记所在的行。
 - **home.html** — 用于**首页/着陆页/索引页**的布局。
+	- 由于jekyll框架中大量用到了Liquid模板语言，因此以本文件为例介绍该语言[[home.html]]
 - **page.html** — 用于包含FrontMatter但**不是文章**的文档布局。
 - **post.html** — 用于**文章**的布局。
 
@@ -41,9 +42,12 @@ Jekyll 主题含有主题默认的布局文件、包含文件和样式表，但�
 - **`minima/_layout.scss`** — 定义各种布局的视觉样式。
 - **`minima/_syntax-highlighting.scss`** — 定义语法高亮的样式。
 
-因此需要去了解sass的内容，内容参阅[sass基本介绍](sass/sass基本介绍.md)
+因此需要去了解sass的内容，内容参阅[sass基本介绍](../相关知识/sass/sass基本介绍.md)
+
 ## `assets`文件夹
 
 指的是 `assets` 目录中的各种资源文件。包含 `main.scss` 文件，该文件从 `_sass` 目录导入 Sass 文件。这个 `main.scss` 会被处理成主题的主要样式表 `main.css`，通过 `_includes/head.html` 在 `_layouts/default.html` 中调用。
 
 该目录可以包含子目录来管理同类资源，并将原样复制到最终转换后的站点目录中。
+
+[[../../两种布局方案的对比]]
