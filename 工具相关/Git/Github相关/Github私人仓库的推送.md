@@ -53,13 +53,12 @@ ssh -T git@github.com
 
 4. **使用 SSH 链接克隆仓库**：
 
-   * 获取仓库的 SSH 链接：
-
+ * 获取仓库的 SSH 链接；
  * 打开 GitHub 仓库页面。
  * 点击绿色的 `Code` 按钮。
  * 选择 `SSH` 并复制链接。
 
-   * 在终端中执行克隆命令：
+* 在终端中执行克隆命令：
 
 ```sh
 git clone git@github.com:username/repository.git
