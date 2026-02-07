@@ -205,7 +205,7 @@ fomalhaut@LawrencedeMacBook-Air ~ % openclaw onboard
 │  Google Gemini API key
 │
 ◇  Enter Gemini API key
-│  AIzaSyAvj3_SxbeC9gLXKy_Fr929mAgDIaxls30
+│  xxxx
 │
 ◇  Model configured ─────────────────────────────────╮
 │                                                    │
@@ -349,8 +349,7 @@ fomalhaut@LawrencedeMacBook-Air ~ % openclaw onboard
 │  MiniMax M2.1
 │
 ◇  Enter MiniMax API key
-│  sk-api-NCoej27PrU52YHuJnH4brDY65bm6AJg3VBz4s-CwiW592nUAdqYOqBSBYhzo08RvFqmlKmDiKD6oHKVsrFJyM4M7VO3XoqZWS57LH4CjpwvNLN
-e4jolYggY
+│  xxx
 │
 ◇  Default model
 │  Keep current (minimax/MiniMax-M2.1)

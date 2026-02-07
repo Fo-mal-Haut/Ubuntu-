@@ -83,4 +83,4 @@ Homebrew/homebrew-cask (git revision c1dad4a5cf; last commit 2021-05-15)
 
 # 运行过程记录
 
-![](assets/brew%20home/20260128143910959.png)
+![](assets/brew%20home/20260207152929909.png)
