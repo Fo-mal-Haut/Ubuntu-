@@ -23,7 +23,7 @@
 
 ### 2. 使用 SSH 克隆私人仓库
 
-1. **生成 SSH 密钥**（如果还没有的话）：
+1. **生成 SSH 密钥**（如果已有，不需要生成）：
 
 ```sh
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
