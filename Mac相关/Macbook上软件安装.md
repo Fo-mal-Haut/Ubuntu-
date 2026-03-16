@@ -8,3 +8,15 @@
 brew install --cask visual-studio-code
 ```
 
+# 安装位置查询
+
+使用`brewhome`安装之后，可以通过命令去查询安装位置，例如：
+
+```shell
+# 查看 FreeSWITCH 安装的所有文件
+brew list freeswitch
+
+# 查看更详细的信息
+brew info freeswitch
+```
+
